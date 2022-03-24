@@ -1,0 +1,747 @@
+@charset "UTF-8";
+
+
+/*기본색상*/
+:root {
+    --main-color: #8BC34A;
+    --accent-color: #FF9800;
+    --dark-main-color: #DBDBDB;
+    --text-bright-color: #FFFFFF;
+    --icon-color: #000000;
+    --icon-bk-color: #ddd;
+    --gray-color: #ddd;
+    --large-width: 1200px;
+    --middle-width: 468px;
+}
+
+/*기본 폰트 크기 설정*/
+@media (max-width: 599px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media (min-width: 600px) and (max-width:799px) {
+    :root {
+        font-size: 16px;
+    }
+}
+@media (min-width: 800px) {
+    :root {
+        font-size: 18px;
+    }
+}
+body {
+    font-size: 16px;
+}
+
+/*기본 설정: 페이지 전체*/
+body {
+    margin: 0;
+    font-family: ‘맑은 고딕’, ‘Appla SD Gothic Neo’, sans-serif;
+}
+
+.head{
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+}
+
+.head a{
+    text-decoration: none;
+    color: var(--icon-color);
+}
+.head a:hover{ background-color: rgba(0, 0, 0, 0.3);}
+.head button {
+    font-size: 10px;
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+.head button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 회원가입 */
+.signUp {
+    border: 1px solid black;
+    width: 100%;
+}
+.signUp tr {
+    border: 1px solid black;
+}
+.signUp th {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+    width: 150px;
+    background-color: antiquewhite;    
+}
+.signUp td {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+.btnA {
+    border: 0.5px solid gray;
+    border-radius: 8%;
+}
+.agree {
+    border: 0.5px solid gray;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+}
+body .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header{
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    background-color: rgba(139,195,74, 0.3);
+    z-index: 1000;
+}
+
+ /* TOP 버튼  */
+.top{
+    position: fixed; bottom:10px; right: 10px; background-color: rgba(139,195,74, 0.3); 
+    width: 50px; height: 50px; border-radius: 15px; line-height: 45px; color: #FF9800;
+    text-align: center; margin-bottom: 5px;
+    z-index: 1;
+}
+
+.top a{text-decoration: none; color: #FF9800;}
+
+
+/* header add */
+/* header .container{
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: space-between;
+} */
+
+/* -------- */
+
+.head .wel
+{
+    display: inline;
+    margin: 0 0;
+    padding: 0 0;
+}
+.head .wel p{
+    font-size: 30px;
+    color: #FF9800;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+
+/* logo */
+.headA{
+    display: inline-block;
+    line-height: 70px;
+    padding: 0 20px;
+    background-color: var(--main-color);
+    color: var(--text-bright-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* nav menu */
+.headB ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.headB a{
+    display: block;
+    padding: 15px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.headB a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.headB .menu {
+    display: block;
+}
+.headB ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* overflow: hidden; */
+}
+.menu_content {
+    position: absolute;
+    background-color: rgba(139,195,74,0.9);
+    display: none;
+    color: lightgoldenrodyellow;
+}
+.menu:hover .menu_content {
+    display: block;
+}
+.headB .menu2 {
+    display: block;
+}
+.menu_content2 {
+    background-color: rgba(139,195,74,0.9);
+    display: none;
+    width: 86px;
+    position: absolute;
+    top: 51px;
+    left: -86px;    
+}
+.menu2:hover .menu_content2 {
+    display: block;
+}
+.headB .menu3 {
+    display: block;
+}
+.menu_content3 {
+    background-color: rgba(139,195,74,0.9);
+    display: none;
+    width: 86px;
+    position: absolute;
+    top: 102px;
+    left: -86px;    
+}
+.menu3:hover .menu_content3 {
+    display: block;
+}
+.headB .menu4 {
+    display: block;
+}
+.menu_content4 {
+    background-color: rgba(139,195,74,0.9);
+    display: none;
+    width: 86px;
+    position: absolute;
+    top: 255px;
+    left: -86px;    
+}
+.menu4:hover .menu_content4 {
+    display: block;
+}
+
+
+/* 큰 화면 */
+@media screen and (min-width: 768px) {
+    header .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headB ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .headB a{
+        font-size: 14px;
+    }
+    .headC {
+        display: none;
+    }
+    
+    .headB {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    header .container-small{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+    .headB{
+        display: none; 
+    }
+    .headB>ul {
+        display: flex;
+        float: right;
+        background-color: rgba(139,195,74, 0.3);
+    }
+    .headC{
+        outline: none;
+        border: none;
+        background-color: none;
+        padding: 0;
+        margin: 10px;
+        font-size: 28px;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    .headC:hover{
+        opacity: 0.3;
+    }
+}
+
+/* 메인화면 이미지 */
+.conA .container .carousel-inner img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    color: var(--text-bright-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.conA h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15vw;
+    letter-spacing: 0.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 0.2em;
+}
+
+.conA .container h3{
+    color: #FF9800;
+}
+
+.conA .container p{
+    color: #8BC34A;
+}
+
+
+/* 메인 메뉴 페이지  */
+
+.conB .container img{
+    height: 150px;
+    width: 150px;
+}
+
+.conB .container{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    
+}
+.conB .text{
+    text-align: center;
+    padding: 0 20px 60px;
+}
+.conB h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.conB h3 {
+    font-size: 20px;
+}
+
+.conB p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+.conB a {
+    color: #5D9AB2;
+    text-decoration: none;
+}
+.conB a:hover {
+    text-decoration: underline;
+}
+
+.conB .best {
+    text-align: center;
+}
+ /* 버튼  */
+ .conB button{
+    border: 2px solid black;
+    color:black;
+    padding: 0;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+}
+.conB .buy{
+    border-color: #4caf50; color: green;
+}
+.conB .keep{
+    border-color: #FF9800; color: orange;
+}
+.conB .detail{
+    border-color: #5D9AB2; color: #5D9AB2;
+}
+
+.conB .buy:hover{
+    background-color: rgba(139,195,74,0.4);
+    color: #000000;
+}
+.conB .keep:hover{
+    background-color: rgba(255, 155, 24, 0.4);
+    color: #000000;
+}
+.conB .detail:hover{
+    background-color: rgba(74, 161, 195, 0.4);
+    color: #000000;
+}
+
+/* --------conC 버튼------- */
+.conC button{
+    border: 2px solid black;
+    color:black;
+    padding: 0;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+}
+.conC .buy{
+    border-color: #4caf50; color: green;
+}
+.conC .keep{
+    border-color: #FF9800; color: orange;
+}
+.conC .detail{
+    border-color: #5D9AB2; color: #5D9AB2;
+}
+
+.conC .buy:hover{
+    background-color: rgba(139,195,74,0.4);
+    color: #000000;
+}
+.conC .keep:hover{
+    background-color: rgba(255, 155, 24, 0.4);
+    color: #000000;
+}
+.conC .detail:hover{
+    background-color: rgba(74, 161, 195, 0.4);
+    color: #000000;
+}
+
+/* 버튼 끝 */
+
+
+@media (min-width:768px){
+    .conB .container{
+        display: flex;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    
+    .conB .text{
+        flex: 1;
+    }
+}
+
+.h2_han_big {
+    position: relative;
+    font-size: 27px;
+    line-height: 45px;
+    color: black;
+    text-align: center;
+}
+
+.h2_han_big_in {
+    position: relative;
+    width: auto;
+    min-height: 60px;
+    margin: 0 auto;
+    background: #fff;
+    display: table;
+    z-index: 5;
+    padding: 0 30px;
+}
+
+.h2_han_big span {
+    font-size: 16px;
+    line-height: 14px;
+    color: #999;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+.h2_han_big .dline {
+    position: absolute;
+    left: 1%;
+    width: 98%;
+    top: 35px;
+    border-bottom: 1px dashed #ccc;
+    z-index: -1;
+}
+
+.conC .container img{
+    height: 150px;
+    width: 150px;
+}
+
+.conC .container {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    
+}
+.conC .text2{
+    text-align: center;
+    padding: 0 20px 60px;
+    margin: 0 auto;
+}
+.conC h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.conC h3{
+    font-size: 20px;
+}
+
+.conC p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+.conC a {
+    color: #5D9AB2;
+    text-decoration: none;
+}
+.conC a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (min-width:768px){
+    .conC .container {
+        display: flex;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    
+    .conC .text {
+        flex: 1;
+    }
+}
+
+.h2_han_big2 {
+    position: relative;
+    font-size: 27px;
+    line-height: 45px;
+    color: black;
+    text-align: center;
+}
+
+.h2_han_big2_in {
+    position: relative;
+    width: auto;
+    min-height: 60px;
+    margin: 0 auto;
+    background: #fff;
+    display: table;
+    z-index: 5;
+    padding: 0 30px;
+}
+
+.h2_han_big2 span {
+    font-size: 16px;
+    line-height: 14px;
+    color: #999;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+.h2_han_big2 .dline2 {
+    position: absolute;
+    left: 1%;
+    width: 98%;
+    top: 35px;
+    border-bottom: 1px dashed #ccc;
+    z-index: -1;
+}
+
+/* footer  */
+footer{
+    background-color: rgba(139,195,74, 0.3);
+    color: var(--icon-color);
+}
+
+footer .container{
+    padding: 40px 20px;
+}
+
+@media (min-width: 768px){
+    footer .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footA{flex: 0 0 100%;}
+    .footC{flex: 0 0 100%;}
+    
+}
+
+
+.footA h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    letter-spacing: 00.2em;
+}
+
+.footA p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footA a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footC{
+    font-size: 12px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+
+
+.footD{flex: 0 0 100%;}
+.footD ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.footD a{
+    display: block;
+    margin-right: 8px;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.footD a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footD
+{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cart 페이지 css  */
+.wrapper .subject{
+    display: block;
+    border-bottom: 2px solid #000000;
+}
+
+.wrapper .cart .cartlist{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.wrapper .cart .cartlist table{
+    width: 1200px;
+}
+
+.wrapper .cart .cartlist th{
+    text-align: center;
+    height: 50px;
+    background-color:rgba(139,195,74,0.9);
+}
+.wrapper .cart .cartlist tr td{
+    background-color: rgba(255, 155, 24, 0.2);
+}
+
+.wrapper .cart .cartsum{
+    display: block;
+    position: relative;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    justify-items: left;
+
+}
+
+.wrapper .cart .cartbtn button{
+    border: 2px solid black;
+    color:black;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+
+}
+
+.wrapper .cart .cartbtn .order{
+    border-color: #4caf50; color: green;
+}
+.wrapper .cart .cartbtn .clean{
+    border-color: #FF9800; color: orange;
+}
+.wrapper .cart .cartbtn .goshop{
+    border-color: #5D9AB2; color: #5D9AB2;
+}
+
+.wrapper .cart .cartbtn .order:hover{
+    background-color: rgba(139,195,74,0.4);
+    color: #000000;
+}
+.wrapper .cart .cartbtn .clean:hover{
+    background-color: rgba(255, 155, 24, 0.4);
+    color: #000000;
+}
+.wrapper .cart .cartbtn .goshop:hover{
+    background-color: rgba(74, 161, 195, 0.4);
+    color: #000000;
+}

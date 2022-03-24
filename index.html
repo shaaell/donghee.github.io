@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealKit</title>
+  <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <!-- <script src="https://kit.fontawesome.com/f66ee7065c.js" crossorigin="anonymous"></script> -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <!--
+    <style>
+        .sr-only{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+-->
+  <script>
+    $(function () {
+      $(".headC").click(function () {
+        $(".headB").slideToggle();
+      });
+    });
+
+
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div align="right" class="head">
+
+      <table>
+        <tr>
+          <td>
+            <div class="wel">
+              <p id="welcom"></p>
+            </div>
+          </td>
+          <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myLogin">
+              로그인</button>&nbsp;&nbsp;|&nbsp;&nbsp;</td>
+
+          <td><button type="button" class="btn btn-primary" data-toggle="modal"
+              data-target="#signUp">회원가입</button>&nbsp;&nbsp;|&nbsp;&nbsp;</td>
+
+          <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myFound">
+              비밀번호찾기</button>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 상단 메뉴 바-->
+    <header>
+      <div class="container">
+        <div class="container-small">
+          <a href="index.html" class="headA">
+            <img src="images/icon.jpg" alt="MealKit" width="130.94px" height="70px">
+          </a>
+          <button class="headC"><span class="fa fa-bars" title="MENU"></span></button>
+        </div>
+        <nav class="headB">
+          <ul>
+            <li><a href="index.html"><span>HOME</span></a></li>
+            <li class="menu"><a href="javascript:void(0)"><span>MENU</span></a>
+              <ol class="menu_content">
+                <li><a href="#"><span>전체상품</span></a></li>
+                <li class="menu2"><a href="#"><i class="fa fa-caret-left"></i> <span>밀키트</span></a>
+                  <div class="menu_content2">
+                    <a href="#"><span>전체</span></a>
+                    <a href="#"><span>한식</span></a>
+                    <a href="#"><span>양식</span></a>
+                    <a href="#"><span>중식&bull;일식</span></a>
+                    <a href="#"><span>동남아</span></a>
+                    <a href="#"><span>샐러드</span></a>
+                    <a href="#"><span>채소가든</span></a>
+                    <a href="#"><span>프리미엄</span></a>
+                    <a href="#"><span>에어라인</span></a>
+                    <a href="#"><span>세트상품</span></a>
+                  </div>
+                </li>
+                <li class="menu3"><a href="#"><i class="fa fa-caret-left"></i> <span>신선&bull;간편식</span></a>
+                  <div class="menu_content3">
+                    <a href="#"><span>전체</span></a>
+                    <a href="#"><span>반찬</span></a>
+                    <a href="#"><span>육류</span></a>
+                    <a href="#"><span>HMR</span></a>
+                    <a href="#"><span>양념&bull;오일</span></a>
+                    <a href="#"><span>간식</span></a>
+                    <a href="#"><span>기타</span></a>
+                  </div>
+                </li>
+                <li><a href="#"><span>교육체험용키트</span></a></li>
+                <li><a href="#"><span>BESPOKE 큐커 밀키트</span></a></li>
+                <li class="menu4"><a href="#"><i class="fa fa-caret-left"></i> <span>기획전</span></a>
+                  <div class="menu_content4">
+                    <a href="#"><span>화이트데이 기획전</span></a>
+                    <a href="#"><span>벼꽃향미 기획전</span></a>
+                    <a href="#"><span>봄 기획전</span></a>
+                  </div>
+                <li><a href="#"><span>베스트</span></a></li>
+                <li><a href="#"><span>신상품</span></a></li>
+            </li>
+            </ol>
+            </li>
+            <li><a href="./html/cart.html"><span>CART</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- 상단 메뉴 바 끝-->
+
+
+    <div class="top"><a href="#">TOP</a></div>
+
+    <!-- The Modal of 로그인 -->
+    <div class="modal fade" id="myLogin">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">로그인</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h2>Login Form</h2>
+            <p>로그인</p>
+            <hr>
+            <label for="id">ID : </label>
+            <input type="text" class="form-control" id="id" required>
+            <br>
+            <label for="pwd">password : </label>
+            <input type="password" class="form-control" id="pwd" required>
+            <br>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-primary" data-dismiss="modal" form="post">Submit</button> -->
+
+            <input type="button" class="btn btn-primary" data-dismiss="modal" value="Submit">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- 로그인 Modal 끝 -->
+
+    <!-- The Modal of 회원가입 -->
+    <div class="modal fade" id="signUp">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">회원가입</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="">
+              <fieldset>
+                <table class="signUp">
+                  <tr>
+                    <th>회원구분<img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수"></td>
+                    <td><input type="radio" name="join" id="j1" value="join" checked><label for="j1">개인회원</label></th>
+                  </tr>
+                  <tr>
+                    <th>회원인증<img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수"></th>
+                    <td>
+                      <div><input type="radio" name="certf" id="c1" value="certf" checked><label for="c1">휴대폰인증</label>
+                      </div>
+                      <div>
+                        <a href="#" class="btnA">
+                          <img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_mobile.gif" alt="휴대폰">
+                          휴대폰인증
+                        </a>
+                        <p>본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+              <br>
+              <fieldset>
+                <legend>기본정보</legend>
+                <table class="signUp">
+                  <tr>
+                    <th>아이디<img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수"></th>
+                    <td><input type="text" name="id" required>(영문소문자/숫자,4~16자)</td>
+                  </tr>
+                  <tr>
+                    <th>비밀번호<img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수"></th>
+                    <td><input type="password" name="pw" required>(영문 대소문자/숫자/특수문자 중 3가지 이상 조합,8~16자)</td>
+                  </tr>
+                  <tr>
+                    <th>이름<img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수"></th>
+                    <td><input type="text" name="name" required></td>
+                  </tr>
+                  <tr>
+                    <th>주소</th>
+                    <td>
+                      <input type="number" name="add1">우편번호<br>
+                      <input type="text" name="add2">기본주소<br>
+                      <input type="text" name="add3">나머지주소(선택입력가능)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>일반전화</th>
+                    <td>
+                      <select name="ph1">
+                        <option value="02">02</option>
+                        <option value="031">031</option>
+                        <option value="032">032</option>
+                        <option value="033">033</option>
+                        <option value="041">041</option>
+                        <option value="042">042</option>
+                        <option value="043">043</option>
+                        <option value="044">044</option>
+                        <option value="051">051</option>
+                        <option value="052">052</option>
+                        <option value="053">053</option>
+                        <option value="054">054</option>
+                        <option value="055">055</option>
+                        <option value="061">061</option>
+                        <option value="062">062</option>
+                        <option value="063">063</option>
+                        <option value="064">064</option>
+                        <option value="0502">0502</option>
+                        <option value="0503">0503</option>
+                        <option value="0504">0504</option>
+                        <option value="0505">0505</option>
+                        <option value="0506">0506</option>
+                        <option value="0507">0507</option>
+                        <option value="0508">0508</option>
+                        <option value="070">070</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                      </select>
+                      -
+                      <input type="number" name="ph2">
+                      -
+                      <input type="number" name="ph3">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>휴대전화<img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수"></th>
+                    <td>
+                      <select name="mo1">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                      </select>
+                      -
+                      <input type="number" name="mo2" required>
+                      -
+                      <input type="number" name="mo3" required>
+                      <a href="#" class="btnA">인증번호받기</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>이메일<img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수"></th>
+                    <td><input type="email" name="email" required></td>
+                  </tr>
+                  <tr>
+                    <th>평생회원</th>
+                    <td>
+                      <input type="radio" name="ever" id="everA" value="agree"><label for="everA">동의함</label>
+                      <input type="radio" name="ever" id="everD" value="disagree" checked><label
+                        for="everD">동의안함</label>
+                      <p>- 평생회원으로 가입하시면 회원 탈퇴시까지는 휴면회원으로 전환되지 않으며, 고객님의 개인정보가 탈퇴시까지 안전하게 보관됩니다.</p>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+              <br>
+              <fieldset>
+                <legend>추가정보</legend>
+                <table class="signUp">
+                  <tr>
+                    <th>성별<img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수"></th>
+                    <td>
+                      <input type="radio" name="gender" id="g1" value="male" required><label for="g1">남자</label>
+                      <input type="radio" name="gender" id="g2" value="female" required><label for="g2">여자</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>추천인 아이디</th>
+                    <td><input type="text" name="recommender"></td>
+                  </tr>
+                </table>
+              </fieldset>
+              <br>
+              <fieldset>
+                <legend>전체 동의</legend>
+                <table class="signUp">
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="_selected_all_" id="allAgree">&nbsp;<label for="allAgree"
+                        style="display: inline;"><b>이용약관 및 개인정보수집 및
+                          이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</b></label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>[필수] 이용약관 동의</b><br>
+                      <div class="agree">
+                        <p>
+                          제1조(목적)<br>
+                          이 약관은 주식회사 밀키트 회사(전자상거래 사업자)가 운영하는 인터넷사이트 밀키트(이하 "밀키트"라 한다)에서 제공하는 전자상거래 관련 서비스(이하 "서비스"라 한다)를
+                          이용함에 있어 밀키트와 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.<br>
+                          <br>
+                          --하략--
+                        </p>
+                      </div>
+                      이용약관에 동의하십니까? <input type="checkbox" name="_selected_" id="check02" value="agree" required><label
+                        for="check02">동의함</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>[필수] 개인정보 수집 및 이용 동의</b><br>
+                      <div class="agree">
+                        <p>
+                          1. 개인정보 수집목적 및 이용목적<br>
+                          <br>
+                          가. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산
+                          <br>
+                          콘텐츠 제공, 구매 및 요금 결제, 물품배송 또는 청구지 등 발송, 금융거래 본인 인증 및 금융 서비스<br>
+                          <br>
+                          --하략--
+                        </p>
+                      </div>
+                      개인정보 수집 및 이용에 동의하십니까? <input type="checkbox" name="_selected_" id="check03" value="agree"
+                        required><label for="check03">동의함</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>[선택] 쇼핑정보 수신 동의</b><br>
+                      <div class="agree">
+                        <p>
+                          할인쿠폰 및 혜택, 이벤트, 신상품 소식 등 쇼핑몰에서 제공하는 유익한 쇼핑정보를 SMS나 이메일로 받아보실 수 있습니다. <br>
+                          <br>
+                          단, 주문/거래 정보 및 주요 정책과 관련된 내용은 수신동의 여부와 관계없이 발송됩니다. <br>
+                          <br>
+                          --하략--
+                        </p>
+                      </div>
+                      SMS 수신을 동의하십니까? <input type="checkbox" name="_selected_" id="check04" value="agree"><label
+                        for="check04">동의함</label>
+                      <br>
+                      이메일 수신을 동의하십니까? <input type="checkbox" name="_selected_" id="check05" value="agree"><label
+                        for="check05">동의함</label>
+                    </td>
+                  </tr>
+                  <script>
+                    $('input[name=_selected_all_]').on('change', function () {
+                      $('input[name=_selected_]').prop('checked', this.checked);
+                    });
+                  </script>
+                </table>
+              </fieldset>
+              <br>
+              <div style="text-align: center;">
+                <input type="submit" value="회원가입">
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- 회원가입 Modal 끝 -->
+
+    <!-- The Modal of 비밀번호 찾기 -->
+    <div class="modal fade" id="myFound">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">비밀번호찾기</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h2>Forgot Passowrd</h2>
+            <p>비밀번호 찾기</p>
+            <hr>
+            <label for="Email">이메일주소 : </label>
+            <input type="email" class="form-control" id="email">
+            <br>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 비밀번호 찾기 Modal 끝 -->
+
+
+
+    <!-- 메인 화면 큰 사진  -->
+    <section class="conA">
+      <div class="container">
+        <!-- <h1>밀키트</h1>
+            <p>간편하고 빠른 집밥 만들기</p> -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+          </ul>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/meal01.jpg" alt="Los Angeles">
+              <div class="carousel-caption">
+                <h3>신제품 !!</h3>
+                <p>집에서 간단히 조리 할수 있습니다</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/meal02.jpg" alt="Chicago">
+              <div class="carousel-caption">
+                <h3>마라탕 !!</h3>
+                <p>집에서 직접 만들어 드세요~</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/meal03.jpg" alt="New York">
+              <div class="carousel-caption">
+                <h3>패키지 상품</h3>
+                <p>할인중인 패키지 상품</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/meal04.jpg" alt="New York">
+              <div class="carousel-caption">
+                <h3>좋습니다</h3>
+                <p>집에서 간단히 조리 할수 있습니다</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <!-- 메인 메뉴 화면 -->
+    <section class="conB" id="contents">
+      <h2 class="h2_han_big">
+        <div class="h2_han_big_in">
+          <b>뭘 먹을지 고민된다면?</b>
+          <span>BEST of BEST</span>
+        </div>
+        <div class="dline"></div>
+      </h2>
+      <div class="container">
+        <div class="text">
+          <img src="images/dok.jpg" alt="떡볶이">
+          <h3>떡볶이</h3>
+          <p>6500원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+          </a>
+        </div>
+        <div class="text">
+          <img src="images/budae.jpg" alt="부대찌개">
+          <h3>부대찌개</h3>
+          <p>8500원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+        </div>
+        <div class="text">
+          <img src="images/kim.jpg" alt="김치찌개">
+          <h3>김치찌개</h3>
+          <p>8000원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+        </div>
+        <div class="text">
+          <img src="images/bul.jpg" alt="불고기">
+          <h3>불고기</h3>
+          <p>7900원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+        </div>
+        <div class="text">
+          <img src="images/jang.jpg" alt="간장 연어장">
+          <h3>간장 연어장</h3>
+          <p>10000원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+        </div>
+      </div>
+    </section>
+    <section class="conC">
+      <h2 class="h2_han_big2">
+        <div class="h2_han_big2_in">
+          <b>이달의 신상품</b>
+          <span>NEW ARRIVALS</span>
+        </div>
+        <div class="dline2"></div>
+      </h2>
+      <div class="container">
+        <div class="text2">
+          <img src="images/jjo.jpg" alt="쭈꾸미 삼겹살">
+          <h3>쭈꾸미 삼겹살</h3>
+          <p>11500원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+
+        </div>
+        <div class="text2">
+          <img src="images/gam.jpg" alt="감자탕">
+          <h3>감자탕</h3>
+          <p>12000원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+          </a>
+        </div>
+        <div class="text2">
+          <img src="images/tang.jpg" alt="어묵탕">
+          <h3>어묵탕</h3>
+          <p>6900원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+        </div>
+        <div class="text2">
+          <img src="images/dak.jpg" alt="매운 무뼈 닭발">
+          <h3>매운 무뼈 닭발</h3>
+          <p>9900원</p>
+          <button class="buy">구매</button>
+          <button class="keep">장바구니</button>
+          <button class="detail">자세히</button>
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+      var wel = document.getElementById("welcom");
+      // 현재 날짜와 시간을 반환하는 Date 객체에서 시간만 뽑아서 now_hour에 저장
+      var date = new Date(); //Date object(객체) 생성
+      var now_hour = date.getHours();
+      var now_min = date.getMinutes();
+
+      if (now_hour > 18) {
+        wel.innerHTML = "Good Evening!!!";
+      }
+      else if (now_hour >= 12) {
+        wel.innerHTML = "Good Afternoon!!!";
+      }
+      else if (now_hour > 4) {
+        wel.innerHTML = "Good Morning!!!";
+      }
+      else {
+        wel.innerHTML = "Welcom!!!";
+      }
+
+    </script>
+
+    <footer id="contact">
+      <div class="container">
+        <div class="footA">
+          <h2>Meal Kit</h2>
+          <p>주소: Mealkit 전문점<br>
+            <a href="http://MealKit.net">http://MealKit.net</a>
+          </p>
+          <div class="footD">
+            <ul>
+              <li><a href="" title="twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="" title="facebook"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="" title="google"><i class="fab fa-google-plus"></i></a></li>
+              <li><a href="" title="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="" title="youtube"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footC">
+          &copy; MealKit corp. All rights Reserved.
+        </div>
+      </div>
+      <div id="current_date">
+        </p>
+        <script>
+          document.getElementById("current_date").innerHTML = Date();
+        </script>
+    </footer>
+  </div>
+</body>
+
+</html>
