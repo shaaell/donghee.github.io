@@ -1,3 +1,3 @@
-*# First git Hub ㅋㅋㅋ
+# First git Hub ㅋㅋㅋ
 
 # donghee.github.io
